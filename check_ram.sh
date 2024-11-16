@@ -20,7 +20,7 @@ elif [ "$memPerc" -ge "$memWarning" ]; then
 elif [ "$memPerc" -le "$memWarning" ]; then
     echo "OK - Memory usage is $memPerc% ($memUsed MB / $memTotal MB)."
     exit 0
-else 
+else
     echo "Could not read memory statistics."
     exit 3 # Unknown, something went really wrong somewhere.
 fi
