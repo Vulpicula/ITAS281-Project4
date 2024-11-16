@@ -1,6 +1,7 @@
 #!/bin/bash
+# Place this inside your nagios plugins folder so you can make a command thingy using $USER1$/check_ram.sh $ARG1$ $ARG2$
 
-# Memory thresholds (in percentage)
+# Memory thresholds (in percentage.)
 memWarning=${1:-75} # Default to 75 if nothing is supplied!
 memCritical=${2:-90}
 
